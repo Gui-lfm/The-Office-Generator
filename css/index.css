@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+ }
+.cabecalho{
+
+    background-color: black;
+   
+}
+ .titulo{
+
+    font-size: 3em;
+    color: white;   
+    padding: 0.25em; 
+ }
+
+ main{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+ }
+.chamada-botao{
+
+    font-size: 2em;
+    padding: 0.5em;
+}
+.apresentacao {
+  
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.botao-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;    
+}
+#gera-episodio{
+    
+    padding: 10px 5px;
+    background-color: rgb(67, 67, 201);
+    color: #ffffff;
+    font-size: 1em;
+    border-radius: 7px;
+    transition: 1s background;
+    
+}
+
+#gera-episodio:hover{
+
+    background: darkblue;
+}
+.rodapé{
+    
+    background-color: black;
+}
+.status{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
