@@ -12,6 +12,9 @@ var temporadas = [temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9]
 
 var botao = document.querySelector(".botao-principal");
 
+var campoEp = document.querySelector(".campo-episodio");
+var txtEp = document.createElement("p");
+
 botao.addEventListener("click", function(){
 
     var tempAleatoria = temporadas[Math.round(Math.random() * (temporadas.length -1))];
@@ -23,6 +26,18 @@ botao.addEventListener("click", function(){
 
     console.log( "temporada Nº " + numTemp);
     console.log("episódio Nº " + numEp);
-    
-    
+
+    criaTxt(numEp, numTemp);    
+        
 })
+
+function criaTxt(ep, temp){
+    txtEp.remove();
+    
+    campoEp.appendChild(txtEp);
+
+    txtEp.classList.add("episodio-gerado");
+
+    txtEp.innerHTML = ("Que tal assistir o episódio  " + ep + " da temporada " + temp + " ?");    
+}
+

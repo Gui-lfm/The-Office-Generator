@@ -58,6 +58,19 @@ body{
 
     background: darkblue;
 }
+
+.campo-episodio{
+
+    padding: 1.5em;
+}
+
+.episodio-gerado{
+
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
 .rodapé{
     
     background-color: black;
@@ -68,4 +81,3 @@ body{
     color: white;
     text-align: center;
 }
-
