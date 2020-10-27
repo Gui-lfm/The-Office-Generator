@@ -19,11 +19,12 @@ body{
  }
 
  main{
+    background-color: lightgray;
     width: 60%;
     height: 100%;
-    margin: 0 auto;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    margin: 1em auto 0 auto;
+    border: 1px solid gray;
+    
 
  }
 .chamada-botao{
@@ -80,4 +81,25 @@ body{
     font-weight: bold;
     color: white;
     text-align: center;
+}
+/* mobile */
+@media screen and (max-width: 480px){
+
+    .titulo, .apresentacao{
+
+        text-align: center;
+    }
+    main{
+
+        width: 93%;
+    }
+    .apresentacao {
+
+        font-size: 0.9em;
+    }
+
+    .episodio-gerado{
+
+        font-size: 1.8em;
+    }
 }
