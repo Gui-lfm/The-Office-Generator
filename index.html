@@ -4,41 +4,26 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Office Generator</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-
     </head>
 
     <body>
-        <header>
-            <div class="cabecalho">
-                <h1 class="titulo">The Office Generator</h1>
-            </div>
+        <header class="cabecalho ">
+            <h1 class="cabecalho__titulo">The Office Generator</h1>
+            <img src="./assets/img/img-cabecalho.png" class="cabecalho__imagem" alt="">
         </header>
+
+        <section class="principal container">
+            <h2 class="principal__titulo">Clique no botão abaixo e receba um episódio aleatório!</h2>
+            <button class="principal__botao principal__botao--transicao">Gerar episódio aleatório</button>
+        </section>
+
+        <div data-epGerado></div>
         
-        <main>
-            <section class="apresentacao">
-                <h2 class="chamada-botao">Clique no botão abaixo para gerar um episódio qualquer !</h2>
-            </section>
-
-            <section class="botao-principal">
-                <button id="gera-episodio">Gerar episódio aleatório</button>
-            </section>
-
-            <section class="campo-episodio">
-
-
-            </section>
-        </main>
-        <footer class="rodapé">
-            <section>
-                <p class="status"></p>
-            </section>
-        </footer>
-        
-        <script src="js/temporadas.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/episodios.js"></script>
     </body>
 </html>

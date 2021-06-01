@@ -1,105 +1,198 @@
-*{
-	box-sizing: border-box;
- }
-
-body{
-
-    font-family: 'PT Sans Narrow', sans-serif;
+@font-face {
+    
+    font-family: 'StaffMeetingPlain';
+    src: url(./assets/font/StaffMeetingPlain.ttf) format('truetype');
 }
+
+.container{
+
+    margin: 5%;
+    padding: 5%;
+}
+
 .cabecalho{
 
-    background-color: black;
-   
-}
- .titulo{
-
-    font-size: 3em;
-    color: white;   
-    padding: 0.25em; 
- }
-
- main{
-    background-color: lightgray;
-    width: 60%;
-    height: 100%;
-    margin: 1em auto 0 auto;
-    border: 1px solid gray;
-    
-
- }
-.chamada-botao{
-
-    font-size: 2em;
-    padding: 0.5em;
-}
-.apresentacao {
-  
-    font-size: 1.5em;
-    padding: 0.5em;
-}
-.botao-principal{
+    background-color: rgb(168, 185, 192);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 1em;    
+    margin-bottom: 1.5rem;
+    padding: 5%;
 }
-#gera-episodio{
+
+.cabecalho__titulo{
     
-    padding: 10px 5px;
-    background-color: rgb(67, 67, 201);
+    font-family: 'StaffMeetingPlain';
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cabecalho__imagem{
+    
+    max-width: 100%;
+    height: auto
+}
+
+.principal{
+    
+    background: lightgray;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.principal__titulo{
+
+    font-family: 'StaffMeetingPlain';
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.principal__botao{
+    
+    align-self: center;
+    appearance: none;
+    background-color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    box-sizing: border-box;
     color: #ffffff;
-    font-size: 1em;
-    border-radius: 7px;
-    transition: 1s background;
-    
-}
-
-#gera-episodio:hover{
-
-    background: darkblue;
-}
-
-.campo-episodio{
-
-    padding: 1.5em;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .episodio-gerado{
 
-    text-align: center;
-    font-size: 2.5em;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 3%;
 }
 
+.episodio-gerado__titulo{
 
-.rodapé{
-    
-    background-color: black;
-}
-.status{
-    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
     text-align: center;
 }
-/* mobile */
-@media screen and (max-width: 480px){
 
-    .titulo, .apresentacao{
+.episodio-gerado__imagem{
+
+    height: auto;
+    max-width: fit-content;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.episodio-gerado__descricao{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* tablets */
+
+@media screen and (min-width: 768px) {
+    
+    .cabecalho{
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .episodio-gerado__descricao{
 
         text-align: center;
     }
-    main{
+}
 
-        width: 93%;
+/* desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .principal{
+
+        margin: 5% 15%;
     }
-    .apresentacao {
 
-        font-size: 0.9em;
+    .principal__botao{
+    
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #e74c3c;
+        border-radius: 0.6em;
+        color: #e74c3c;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .principal__botao:hover{
+    
+        color: #fff;
+        outline: 0;
+    }
+    
+    .principal__botao:focus{
+    
+        color: #fff;
+        outline: 0;
+    }
+    
+    .principal__botao--transicao {
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        
+    }
+    
+    .principal__botao--transicao:hover {
+    
+        box-shadow: 0 0 40px 40px #e74c3c inset;
     }
 
     .episodio-gerado{
 
-        font-size: 1.8em;
+        margin: 2%;
+        padding: 2%;
+    }
+
+    .episodio-gerado__titulo{
+
+        font-size: 2rem;
+    }
+    
+    .episodio-gerado__imagem{
+
+        width: 75%;
+        padding: 2rem 0;
+    }
+
+    .episodio-gerado__descricao{
+
+        font-size: 1.5rem;
     }
 }
