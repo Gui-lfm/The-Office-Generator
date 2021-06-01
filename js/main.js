@@ -13,7 +13,6 @@ episodioAletorio.addEventListener("click", (evento)=>{
     let imagem = episodios[numAleatorio].imagem
     let sinopse = episodios[numAleatorio].sinopse
 
-
     sectionEp.innerHTML = criaSection(titulo, imagem, sinopse)
     divEp.appendChild(sectionEp)
     console.log(numAleatorio)
