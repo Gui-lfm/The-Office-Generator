@@ -21,9 +21,9 @@ episodioAletorio.addEventListener("click", (evento)=>{
 
 function criaSection(titulo, imagem, sinopse){
 
-    const linhaEpisodioGerado = `<h2 class="episodio-gerado__titulo" id="botton">${titulo}</h2>
+    const linhaEpisodioGerado = `<h2 class="episodio-gerado__titulo" >${titulo}</h2>
     <img class="episodio-gerado__imagem" src=${imagem} alt="">
-    <p class="episodio-gerado__descricao">${sinopse}</p>`
+    <p class="episodio-gerado__descricao" id="ep_gerado">${sinopse}</p>`
 
     return linhaEpisodioGerado
 }
