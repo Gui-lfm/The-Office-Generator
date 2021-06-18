@@ -51,7 +51,7 @@ html{
 .principal__titulo{
 
     font-family: 'StaffMeetingPlain';
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5;
     padding-bottom: 0.5rem;
     text-align: center;
@@ -113,6 +113,11 @@ html{
 
 @media screen and (min-width: 768px) {
     
+    .principal__titulo{
+    
+        font-size: 1.5rem;
+    }
+
     .cabecalho{
         align-items: center;
         display: flex;
@@ -133,6 +138,11 @@ html{
     .principal{
 
         margin: 5% 15%;
+    }
+
+    .principal__titulo{
+
+        
     }
 
     .principal__botao{

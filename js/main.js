@@ -6,7 +6,7 @@ sectionEp.classList.add("episodio-gerado", "container")
 
 episodioAletorio.addEventListener("click", (evento)=>{
 
-    //evento.preventDefault()
+    evento.preventDefault()
     const numAleatorio = Math.floor(Math.random() * episodios.length)
 
     let titulo = episodios[numAleatorio].titulo
@@ -16,7 +16,10 @@ episodioAletorio.addEventListener("click", (evento)=>{
     sectionEp.innerHTML = criaSection(titulo, imagem, sinopse)
     divEp.appendChild(sectionEp);
 
-    
+    setTimeout(()=>{
+
+        window.scrollTo(0,document.body.scrollHeight);
+    }, 500)
 })
 
 function criaSection(titulo, imagem, sinopse){
