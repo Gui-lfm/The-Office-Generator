@@ -19,7 +19,7 @@ episodioAletorio.addEventListener("click", (evento)=>{
     setTimeout(()=>{
 
         window.scrollTo(0,document.body.scrollHeight);
-    }, 500)
+    }, 800)
 })
 
 function criaSection(titulo, imagem, sinopse){
