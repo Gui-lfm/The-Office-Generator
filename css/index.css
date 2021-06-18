@@ -1,7 +1,12 @@
 @font-face {
     
     font-family: 'StaffMeetingPlain';
-    src: url(./assets/font/StaffMeetingPlain.ttf) format('truetype');
+    src: url(../assets/font/StaffMeetingPlain.ttf) format('truetype');
+}
+
+html{
+
+    scroll-behavior: smooth;
 }
 
 .container{
